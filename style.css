@@ -10,7 +10,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
 }
 
@@ -20,12 +19,34 @@ html{
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
+
+section{
+    padding: 2rem 9%;
+
+}
+.button{
+    display:inline-flex;
+    
+    border-radius: 5rem;
+    background: #8e85b3;
+    color: #685C99;
+    padding: .7rem 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-top: .3rem;
+    justify-content: center;
+    
+}
+.button:hover{
+    background: #BE95C4;
+}
+
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: #eee;
-    padding: 2rem 9%;
-    display: flex;
+    background: #B9B3D1;
+    padding: .6rem 9%;
+    display:inline-flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
@@ -77,6 +98,42 @@ header .fa-bars{
     border: .1rem solid rgba(0, 0, 0, .3);
     display: none;
 }
+
+.home{
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        background: url(home.png)right center/contain no-repeat, 
+        linear-gradient(to left, #AA93C8 , #BFAED6);
+        
+    }
+    
+.home .content{
+    max-width: 50rem;
+}
+.home .content h3{
+    font-family: "Marhey", sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 3rem;
+    padding: .4rem 2rem;
+    color: #685C99;
+
+}
+.home .content span{
+    font-size: 2.5rem;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #685C99;
+    padding: .25rem 5rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+
 
 @media (max-width:991px){
 
