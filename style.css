@@ -23,7 +23,7 @@ html{
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: #fff;
+    background: #eee;
     padding: 2rem 9%;
     display: flex;
     align-items: center;
@@ -31,14 +31,14 @@ header{
     z-index: 1000;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
-header .logo {
+/* header .logo {
     font-family: "Dancing Script", cursive;
     font-weight: 700;
     font-style: bolder;
     font-size: 5rem;
     color: #333;
 
-}
+} */
 
 header .logo span{
 color: var(--pink);
@@ -47,21 +47,21 @@ color: var(--pink);
 header .navbar a{
     font-size: 2rem;
     padding: 0 1.5rem;
-    color: #666;
+    color: #9F86C0;
 }
 
 header .navbar a:hover{
-    color: var(--pink);
+    color: #BE95C4;
 }
 
 header .icons a{
     font-size: 3rem;
-    color: #333;
+    color: #9F86C0;
     margin-left: 1.5rem;
 }
 
 header .icons a:hover{
-    color: var(--pink);
+    color: #BE95C4;
 }
 
 header #toggler{
