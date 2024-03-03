@@ -24,6 +24,18 @@ section{
     padding: 2rem 9%;
 
 }
+.heading{
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    margin: 2rem 0;
+    font-size: 4rem;
+    color: #7B4983;
+    background:#BE95C4 ;
+}
+.heading span{
+    color: #544B81;
+}
 .button{
     display:inline-flex;
     
@@ -31,9 +43,10 @@ section{
     background: #8e85b3;
     color: #685C99;
     padding: .7rem 2rem;
+    margin-left: 17rem;
     cursor: pointer;
     font-size: 1.6rem;
-    margin-top: .3rem;
+    margin-top: 2rem;
     justify-content: center;
     
 }
@@ -61,28 +74,73 @@ header{
 
 } */
 
-header .logo span{
-color: var(--pink);
-}
-
 header .navbar a{
     font-size: 2rem;
     padding: 0 1.5rem;
-    color: #9F86C0;
+    color: #372768;
 }
 
 header .navbar a:hover{
-    color: #BE95C4;
+    color: #9F86C0;
 }
 
 header .icons a{
     font-size: 3rem;
-    color: #9F86C0;
+    color: #372768;
     margin-left: 1.5rem;
+    
 }
 
 header .icons a:hover{
-    color: #BE95C4;
+    color: #9F86C0;
+}
+header .icons div{
+    font-size: 3rem;
+    color: #372768;
+    margin-left: 1.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+}
+header .icons div:hover{
+    color: #9F86C0;
+}
+
+
+header .search-form{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 50rem;
+    height: 4rem;
+    background: #B9B3D1;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+
+}
+header .search-form.active{
+    right: 2rem;
+    display: block;
+    transition: .4s linear;
+}
+header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: #372768;
+    padding: 0 2rem;
+}
+header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: #372768;
+    cursor: pointer;
+}
+header .search-form label:hover{
+    color: #9F86C0;
 }
 
 header #toggler{
@@ -103,8 +161,11 @@ header .fa-bars{
         display: flex;
         align-items: center;
         min-height: 100vh;
-        background: url(home.png)right center/contain no-repeat, 
-        linear-gradient(to left, #AA93C8 , #BFAED6);
+        background-image: url(bg.png);
+        background-repeat: no-repeat;
+        background-size: 1600px 700px;
+        
+
         
     }
     
@@ -116,8 +177,8 @@ header .fa-bars{
     font-size: 5rem;
     font-weight: 600;
     font-style: italic;
-    margin-top: 3rem;
-    padding: .4rem 2rem;
+    margin-top: 6rem;
+    padding: .4rem 4rem;
     color: #685C99;
 
 }
@@ -127,10 +188,62 @@ header .fa-bars{
     font-weight: 400;
     font-style: normal;
     color: #685C99;
-    padding: .25rem 5rem;
+    padding: .30rem 9rem;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container img{
+    width: 45rem;
+    height: 30rem;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem #685C99 ;
+    object-fit: cover;
+}
+.about .row .video-container h3{
+    position: absolute;
+    top: 50%;transform: translateY(-50%);
+    font-size: 2rem;
+    background: #9F86C0;
+    width: 45rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+.about .row .content{
+    flex:1 1 20rem;
+    
+}
+.about .row .content h3{
+    
+    font-size: 3rem;
+    color: #372768;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #544B81;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+.about .row .button{
+    margin-left: auto;
+    margin-top: auto;
+}
+
 
 
 
@@ -143,6 +256,12 @@ header .fa-bars{
     
     header{
     padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .home{
+        background-position: left;
     }
 
 }
@@ -170,6 +289,14 @@ header .fa-bars{
             background: #fff;
             border: .1rem solid rgba(0, 0, 0, .1);
             display: block;
+
+
+         }
+         .home .content h3{
+            font-size: 5rem;
+         }
+         .home .content span{
+            font-size: 2.5rem;
          }
 
     }
@@ -179,5 +306,10 @@ header .fa-bars{
         html{
             font-family: 50%;
         }
+        .heading{
+            font-size: 3rem;
+        }
     
     }
+
+    
