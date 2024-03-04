@@ -38,7 +38,6 @@ section{
 }
 .button{
     display:inline-flex;
-    
     border-radius: 5rem;
     background: #8e85b3;
     color: #685C99;
@@ -164,9 +163,6 @@ header .fa-bars{
         background-image: url(bg.png);
         background-repeat: no-repeat;
         background-size: 1600px 700px;
-        
-
-        
     }
     
 .home .content{
@@ -243,9 +239,76 @@ header .fa-bars{
     margin-left: auto;
     margin-top: auto;
 }
+.contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: .5rem;
+    align-items: center;
+    width: 100%;
+}
+.contact .row form{
+    flex: 1;
+    width: 50%;
+    padding: 2rem 4.5rem;
+    box-shadow: 0 .5rem 1.5rem #372768;
+    border: .1rem solid #544B81;
+    background: #8e85b3;
+    border-radius: .5rem;
+}
+.contact .row .image{
+   flex: 1 1 5rem; 
+}
+.contact .row .image img{
+    width: 45rem;
+    height: 30rem;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem #685C99 ;
+    object-fit: cover;
+}
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #544B81;
+    text-transform: none;
+    border: .1rem solid #372768;
+    border-radius: .5rem;
+    margin: 1rem 1rem;
+    width: 100%;
+}
+.contact .row form .box:focus{
+    border-color: #9F86C0;
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+.contact .row form .button{
+    display:inline-flex;
+    border-radius: 5rem;
+    background: #BE95C4;
+    color: #685C99;
+    padding: .7rem 2rem;
+    margin-left: 27rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    justify-content: center;}
 
+    .contact .row form .button:hover{
+        background: #9F86C0;
+    }
+.contact .row .content h3{
 
-
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+    color:#9F86C0;
+}
+.contact .row .content a{
+    color: #9F86C0;
+}
 
 
 @media (max-width:991px){
